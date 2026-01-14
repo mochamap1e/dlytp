@@ -1,6 +1,6 @@
 import path from "path";
 import { fileURLToPath } from "url";
-import { app, BrowserWindow } from "electron";
+import { app, ipcMain, BrowserWindow } from "electron";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -33,3 +33,7 @@ app.whenReady().then(() => {
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") app.quit();
 });
+
+// events
+
+ipcMain.on("quit", () => app.quit());

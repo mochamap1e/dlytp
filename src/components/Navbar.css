@@ -13,7 +13,35 @@
     padding: 50px;
 }
 
-#navbar button {
+#navbar div {
+    display: flex;
+    flex-direction: column;
+
     width: 75%;
-    height: 30px;
+    gap: 20px;
+}
+
+#navbar a {
+    width: 100%;
+    padding: 10px 0;
+
+    color: white;
+    background-color: rgb(45, 45, 45);
+
+    border-radius: 5px;
+
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    
+    transition: ease-in-out 0.08s;
+}
+
+#navbar a:hover {
+    transform: scale(1.03);
+}
+
+#navbar a:active {
+    transform: scale(0.97);
 }
