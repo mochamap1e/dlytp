@@ -1,0 +1,19 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(35, 35, 35);
+
+    width: clamp(200px, 25%, 300px);
+    height: 100vh;
+}
+
+#navbar h1 {
+    padding: 50px;
+}
+
+#navbar button {
+    width: 75%;
+    height: 30px;
+}

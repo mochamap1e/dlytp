@@ -1,0 +1,26 @@
+{
+    "name": "dlytp",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "electron/main.js",
+    "private": true,
+    "scripts": {
+        "start": "electron .",
+        "build": "vite build",
+        "dev": "concurrently \"vite\" \"bun run start\""
+    },
+    "dependencies": {
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0",
+        "react-router-dom": "^7.12.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react-swc": "^4.2.2",
+        "concurrently": "^9.2.1",
+        "electron": "^39.2.7",
+        "vite": "npm:rolldown-vite@7.2.5"
+    },
+    "overrides": {
+        "vite": "npm:rolldown-vite@7.2.5"
+    }
+}
