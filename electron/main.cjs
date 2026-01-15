@@ -1,9 +1,5 @@
-import path from "path";
-import { fileURLToPath } from "url";
-import { app, ipcMain, BrowserWindow } from "electron";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const path = require("path");
+const { app, ipcMain, BrowserWindow } = require("electron");
 
 function createWindow() {
     const window = new BrowserWindow({
@@ -11,7 +7,7 @@ function createWindow() {
         height: 720,
         autoHideMenuBar: true,
         webPreferences: {
-            preload: path.join(__dirname, "preload.js")
+            preload: path.join(__dirname, "preload.cjs")
         }
     });
 

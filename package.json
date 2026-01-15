@@ -2,7 +2,7 @@
     "name": "dlytp",
     "version": "0.0.0",
     "type": "module",
-    "main": "electron/main.js",
+    "main": "electron/main.cjs",
     "private": true,
     "scripts": {
         "start": "electron .",

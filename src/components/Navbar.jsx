@@ -11,9 +11,9 @@ export default function Navbar() {
         <h1>dlytp</h1>
 
         <div>
-            <Nav>Home</Nav>
+            <Nav to="/">Home</Nav>
             <Nav>Library</Nav>
-            <Nav>Queue</Nav>
+            <Nav to="/downloader">Downloader</Nav>
             <Nav>Settings</Nav>
             <a onClick={() => window.electronAPI.quit()}>Quit</a>
         </div>
